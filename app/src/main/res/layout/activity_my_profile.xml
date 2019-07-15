@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_grey"
+    tools:context=".MyProfile">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="220dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/andela_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_andelawhite" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/user_title_name"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@string/display_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvTrackLabel"
+        style="@style/textViewsStyle"
+        android:text="@string/track_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tvTrackValue"
+        style="@style/textViewsStyle"
+        android:text="@string/track_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toEndOf="@+id/tvTrackLabel"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tvCountryLabel"
+        style="@style/textViewsStyle"
+        android:text="@string/country_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrackLabel" />
+
+    <TextView
+        android:id="@+id/tvCountryValue"
+        style="@style/textViewsStyle"
+        android:text="@string/country_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toEndOf="@+id/tvCountryLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrackValue" />
+
+
+    <TextView
+        android:id="@+id/tvEmailLabel"
+        style="@style/textViewsStyle"
+        android:text="@string/email_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryLabel" />
+
+    <TextView
+        android:id="@+id/tvEamilValue"
+        style="@style/textViewsStyle"
+        android:text="@string/email_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toEndOf="@+id/tvEmailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryValue" />
+
+    <TextView
+        android:id="@+id/tvPhoneLabel"
+        style="@style/textViewsStyle"
+        android:text="@string/phone_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailLabel" />
+
+    <TextView
+        android:id="@+id/tvPhoneValue"
+        style="@style/textViewsStyle"
+        android:text="@string/phone_number_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toEndOf="@+id/tvPhoneLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvEamilValue" />
+
+    <TextView
+        android:id="@+id/tvSlackeLabel"
+        style="@style/textViewsStyle"
+        android:text="@string/slack_username_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneLabel" />
+
+    <TextView
+        android:id="@+id/tvSlackValue"
+        style="@style/textViewsStyle"
+        android:text="@string/slackUsernameValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toEndOf="@+id/tvSlackeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneValue" />
+
+</android.support.constraint.ConstraintLayout>
